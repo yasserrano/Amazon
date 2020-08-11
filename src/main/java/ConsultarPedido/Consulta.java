@@ -15,7 +15,7 @@ public class Consulta implements Interface{
 	_Framework step = new _Framework();
 	
 	@Test
-	public void execultaConsulta() {
+	public void execultaConsulta() throws InterruptedException {
 		
 	step.url(urlHome);
 	

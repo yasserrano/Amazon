@@ -1,6 +1,7 @@
 package Framework;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -73,17 +74,17 @@ public class _Framework extends DriverFactory {
 		
 	}
 	
-	public void celular () {
+	public void celular () throws InterruptedException {
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text() = 'CELULAR XIAOMI REDMI NOTE 8 DUAL 128GB NEPTUNE BLUE']")));
-		driver.findElement(By.xpath("//span[text() = 'CELULAR XIAOMI REDMI NOTE 8 DUAL 128GB NEPTUNE BLUE']")).click();
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@class = 'a-section a-spacing-none a-spacing-top-small'])[1]/h2/a")));
+		driver.findElement(By.xpath("(//div[@class = 'a-section a-spacing-none a-spacing-top-small'])[1]/h2/a")).click();
 		
 	}
 	
 	public void cor () {
 
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//img[@class = 'imgSwatch'])[2]")));
 		driver.findElement(By.xpath("(//img[@class = 'imgSwatch'])[2]")).click();
 		
@@ -153,12 +154,14 @@ public class _Framework extends DriverFactory {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value = 'Excluir']")));	
 		driver.findElement(By.xpath("//input[@value = 'Excluir']")).click();
 		
+		
 	}
 	
 //------------------------------------------------------------------------------------------------------------------------------------------//	
 		
-	public void produto1 (String produto1) {
+	public void produto1 (String produto1) throws InterruptedException {
 		
+		Thread.sleep(2000);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id = 'twotabsearchtextbox']")));	
 		driver.findElement(By.xpath("//input[@id = 'twotabsearchtextbox']")).sendKeys(produto1);
@@ -174,6 +177,8 @@ public class _Framework extends DriverFactory {
 		driver.findElement(By.xpath("//input[@id = 'twotabsearchtextbox']")).clear();
 		driver.findElement(By.xpath("//input[@id = 'twotabsearchtextbox']")).sendKeys(produto2);
 		lupa();
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
+		wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@class = 's-expand-height s-include-content-margin s-border-bottom s-latency-cf-section'])[1]")));
 		Consulta.textoProduto2 = driver.findElement(By.xpath("(//div[@class = 's-expand-height s-include-content-margin s-border-bottom s-latency-cf-section'])[1]")).getText();
 		
 	}
@@ -275,8 +280,75 @@ public class _Framework extends DriverFactory {
 	
 //----------------------------------------------------------------------------------------------------------------------------------------------//
 	
+	public void pageDonw () throws InterruptedException {
+		
+		Thread.sleep(1000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy ( 0, 10000 )");
+			
+	}
+	
+	public void carreiras () {
+		
+		driver.findElement(By.xpath("//a[text() = 'Carreiras']")).click();
+		
+	}
+	
+	public void X () throws InterruptedException {
+		
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//a[@class = 'close-button py-2 px-4']")).click();
+		
+	}
+	
+	public void local (String local) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@role = 'combobox'])[4]")));
+		driver.findElement(By.xpath("(//input[@role = 'combobox'])[4]")).sendKeys(local);
+		
+	}
+	
+	public void procurar () {
+		
+		driver.findElement(By.xpath("//button[@id = 'search-button']")).click();
+		
+	}
+	
+	public void desenvolvimentoSoftware () {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[p/text()=\"Desenvolvimento de software\"])[1]")));
+		driver.findElement(By.xpath("(//*[p/text()=\"Desenvolvimento de software\"])[1]")).click();
+		
+	}
+	
+	public void proximo () {
+		
+		driver.findElement(By.xpath("//button[@class = 'btn circle right']")).click();
+			
+	}
+	
+	public void classificar () {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class = 'dropdown']")));
+		driver.findElement(By.xpath("//div[@class = 'dropdown']")).click();
+		
+	}
+	
+	public void recente () {
+		
+		
+		driver.findElement(By.xpath("//a[@id = 'recent']")).click();
+		
+	}
 	
 	
+	
+	
+	
+//----------------------------------------------------------------------------------------------------------------------------------------------//	
 	
 	
 	

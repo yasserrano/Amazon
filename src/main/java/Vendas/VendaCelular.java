@@ -9,7 +9,7 @@ public class VendaCelular {
 	_Framework step = new _Framework();
 	
 	@Test
-	public void executaVendaCelular () {
+	public void executaVendaCelular () throws InterruptedException {
 		
 		step.campopesquisa("Celular Xiaomi");
 		step.lupa();
