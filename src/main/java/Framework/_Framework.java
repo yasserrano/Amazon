@@ -199,7 +199,7 @@ public class _Framework extends DriverFactory {
 //-------------------------------------------------------------------------------------------------------------------------------------------//
 	
 	
-	public void menu () {
+	public void listas () {
 
 		WebElement element = driver.findElement(By.xpath("(//span[@style = 'visibility: visible;'])[1]"));
 		Actions action = new Actions(driver).moveToElement(element);
@@ -266,6 +266,8 @@ public class _Framework extends DriverFactory {
 	
 	public void sair () {
 		
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id = 'nav-item-signout']")));
         driver.findElement(By.xpath("//a[@id = 'nav-item-signout']")).click();
 		
 	}
@@ -344,20 +346,36 @@ public class _Framework extends DriverFactory {
 		
 	}
 	
-	
-	
-	
-	
 //----------------------------------------------------------------------------------------------------------------------------------------------//	
 	
 	
+	public void menu () {
+		
+		driver.findElement(By.xpath("//a[@id = \"nav-hamburger-menu\"]")).click();
+		
+	}
 	
+	public void cozinha () {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class = 'hmenu-item']/div[text() = 'Cozinha ']")));
+		driver.findElement(By.xpath("//a[@class = 'hmenu-item']/div[text() = 'Cozinha ']")).click();
 	
+	}
 	
+	public void panelas () {
+		
+		driver.findElement(By.xpath("//a[@class = 'hmenu-item'][text() = 'Panelas ']")).click();
+		
+	}
 	
-	
-	
-	
+	public void prime () {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name = 's-ref-checkbox-19171728011']")));
+		driver.findElement(By.xpath("//input[@name = 's-ref-checkbox-19171728011']")).click();
+		
+	}
 	
 	
 	

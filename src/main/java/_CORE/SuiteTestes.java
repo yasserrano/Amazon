@@ -5,13 +5,9 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import AlterarCadastro.AlterarCadastro;
-import ConsultarPedido.Consulta;
-import DesistirVenda.DesistirVenda;
+import ConsultarMenu.ConsultarMenu;
 import Login.Login;
 import Logout.Logout;
-import TrabalheConosco.TrabalheConosco;
-import Vendas.VendaCelular;
 
 	@RunWith(Suite.class)
 	@SuiteClasses({	
@@ -21,7 +17,8 @@ import Vendas.VendaCelular;
 //		DesistirVenda.class,
 //		Consulta.class,
 //		AlterarCadastro.class,
-		TrabalheConosco.class,
+	    ConsultarMenu.class,
+//		TrabalheConosco.class,
 //		Logout.class,
 	 
 })

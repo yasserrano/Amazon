@@ -14,7 +14,7 @@ public class AlterarCadastro implements Interface{
 	public void executaAlterarCadastro() {
 		
 		step.url(urlHome);
-		step.menu();
+		step.listas();
 		step.conta();
 		step.acesso();
 		step.editar();
@@ -27,7 +27,7 @@ public class AlterarCadastro implements Interface{
 		step.concluido();
 
 		step.url(urlHome);
-		step.menu();
+		step.listas();
 		step.conta();
 		step.acesso();
 		step.editar();
