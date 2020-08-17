@@ -1,7 +1,7 @@
 # Automação De Testes UI - Amazon :checkered_flag:
 
 
-### O que o é capaz de fazer :point_down:
+### O que é capaz de fazer :point_down:
 
 
 
