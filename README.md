@@ -5,7 +5,7 @@
 
 
 
-[![Amazon](http://img.youtube.com/vi/k3kujILhrjw/0.jpg)](http://www.youtube.com/watch?v=k3kujILhrjw "Teste de IU - Amazon")
+[![Amazon](https://github.com/yasserrano/Amazon/blob/master/amazon.png)](http://www.youtube.com/watch?v=k3kujILhrjw "Teste de IU - Amazon")
 
 
 
@@ -13,10 +13,10 @@
 
 
 
-- [x] (Eclipse)[https://www.eclipse.org/downloads/]
-- [x] (Junit)[https://junit.org/junit5/]
-- [x] (Selenium)[https://www.selenium.dev/projects/]
-- [x] (JAVA)[https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html]
+- [x] [Eclipse](https://www.eclipse.org/downloads/)
+- [x] [Junit](https://junit.org/junit5/)
+- [x] [Selenium](https://www.selenium.dev/projects/)
+- [x] [JAVA](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html)
 
 
 
