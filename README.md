@@ -1,7 +1,7 @@
 # Automação De Testes UI - Amazon
 
 
-### O que o projeto pode fazer :checkered_flag:
+## O que o projeto pode fazer :checkered_flag:
 
 
 
@@ -9,7 +9,7 @@
 
 
 
-### Dependências e tecnologias utilizadas :inbox_tray:
+## Dependências e tecnologias utilizadas :inbox_tray:
 
 
 
@@ -20,4 +20,4 @@
 
 
 
-### Em desenvolvimento... :construction:
+## Em desenvolvimento... :construction:
