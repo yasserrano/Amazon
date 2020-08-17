@@ -1,7 +1,7 @@
 # Automação De Testes UI - Amazon
 
 
-### O que o projeto pode fazer :checkered_flag:
+### O que o projeto é capaz de fazer :checkered_flag:
 
 
 
