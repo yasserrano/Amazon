@@ -1,4 +1,4 @@
-# Automação De Teste User Interface Web- Amazon :checkered_flag:
+# Automação De Teste UI Web- Amazon :checkered_flag:
 
 
 ### O que é capaz de fazer :point_down:
