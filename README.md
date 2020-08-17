@@ -1,15 +1,15 @@
 # Automação De Testes UI - Amazon
 
 
-## O que o projeto pode fazer :checkered_flag:
+### O que o projeto pode fazer :checkered_flag:
 
 
 
-[![Amazon](https://github.com/yasserrano/Amazon/blob/master/amazon.png)](http://www.youtube.com/watch?v=k3kujILhrjw "Teste de IU - Amazon")
+> [![Amazon](https://github.com/yasserrano/Amazon/blob/master/amazon.png)](http://www.youtube.com/watch?v=k3kujILhrjw "Teste de IU - Amazon")
 
 
 
-## Dependências e tecnologias utilizadas :inbox_tray:
+### Dependências e tecnologias utilizadas :inbox_tray:
 
 
 
@@ -20,4 +20,4 @@
 
 
 
-## Em desenvolvimento... :construction:
+### Em desenvolvimento... :construction:
