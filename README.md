@@ -9,7 +9,7 @@
 
 
 
-### Dependências e tecnologias utilizadas :inbox_tray:
+### Dependências e tecnologias para execução :inbox_tray:
 
 
 
