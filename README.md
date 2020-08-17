@@ -1,7 +1,7 @@
-# Automação De Testes UI - Amazon :checkered_flag:
+# Automação De User Interface Web- Amazon :checkered_flag:
 
 
-### O que é capaz de fazer :point_down:
+### O que o teste é capaz de fazer :point_down:
 
 
 
