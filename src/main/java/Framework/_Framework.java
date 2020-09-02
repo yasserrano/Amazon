@@ -178,8 +178,8 @@ public class _Framework extends DriverFactory {
 		driver.findElement(By.xpath("//input[@id = 'twotabsearchtextbox']")).sendKeys(produto2);
 		lupa();
 		WebDriverWait wait1 = new WebDriverWait(driver, 10);
-		wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@class = 's-expand-height s-include-content-margin s-border-bottom s-latency-cf-section'])[1]")));
-		Consulta.textoProduto2 = driver.findElement(By.xpath("(//div[@class = 's-expand-height s-include-content-margin s-border-bottom s-latency-cf-section'])[1]")).getText();
+		wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@class = 'a-section a-spacing-none a-spacing-top-small'])[3]")));
+		Consulta.textoProduto2 = driver.findElement(By.xpath("(//div[@class = 'a-section a-spacing-none a-spacing-top-small'])[3]")).getText();
 		
 	}
 	
@@ -191,8 +191,8 @@ public class _Framework extends DriverFactory {
 		driver.findElement(By.xpath("//input[@id = 'twotabsearchtextbox']")).sendKeys(produto3);
 		lupa();
 		WebDriverWait wait1 = new WebDriverWait(driver, 10);
-		wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@class = 's-include-content-margin s-border-bottom s-latency-cf-section'])[1]")));	
-		Consulta.textoProduto3 = driver.findElement(By.xpath("(//div[@class = 's-include-content-margin s-border-bottom s-latency-cf-section'])[1]")).getText();
+		wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@class = 's-expand-height s-include-content-margin s-border-bottom s-latency-cf-section'])[2]")));	
+		Consulta.textoProduto3 = driver.findElement(By.xpath("(//div[@class = 's-expand-height s-include-content-margin s-border-bottom s-latency-cf-section'])[2]")).getText();
 		
 	}
 	
@@ -267,8 +267,8 @@ public class _Framework extends DriverFactory {
 	public void sair () {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id = 'nav-item-signout']")));
-        driver.findElement(By.xpath("//a[@id = 'nav-item-signout']")).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class = 'nav-text'][text() = 'Sair da conta']")));
+        driver.findElement(By.xpath("//span[@class = 'nav-text'][text() = 'Sair da conta']")).click();
 		
 	}
 	
@@ -351,7 +351,7 @@ public class _Framework extends DriverFactory {
 	
 	public void menu () {
 		
-		driver.findElement(By.xpath("//a[@id = \"nav-hamburger-menu\"]")).click();
+		driver.findElement(By.xpath("//a[@id = 'nav-hamburger-menu']")).click();
 		
 	}
 	

@@ -23,7 +23,7 @@ public class Consulta implements Interface{
 	
 	step.produto1("fone de ouvido");
 	
-	if (textoProduto1.toString().contains("Fone de Ouvido")) {
+	if (textoProduto1.toString().contains("Fone de Ouvido") || textoProduto1.toString().contains("Fone de Ouvido")) {
 		
 		System.out.println("Caso de teste: (Consulta)" + "\n" + "produto1: Fone de ouvido identificado com Sucesso! ");
 		
@@ -42,7 +42,7 @@ public class Consulta implements Interface{
 	
 	step.produto2("Notebook");
 	
-	if (textoProduto2.toString().contains("Notebook")) {
+	if (textoProduto2.toString().contains("Notebook") || textoProduto2.toString().contains("NOTEBOOK")) {
 		
 		System.out.println("Caso de teste: (Consulta)" + "\n" + "produto2: Notebook identificado com Sucesso!!" );
 		

@@ -15,7 +15,7 @@ public class Logout implements Interface {
 	public void executaLogout () {
 		
 		step.url(urlHome);
-		step.menu();
+		step.listas();
 		step.sair();
 		
 		Assert.assertEquals("Fazer login", step.validarLogout());
